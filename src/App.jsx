@@ -7,6 +7,7 @@ import Input from "./components/Input"
 import Grades from "./components/Grades"
 import ContactForm from './components/ContactForm'
 import Paragraph from './components/Paragraph'
+import Section from './components/Section'
 function App() {
 
 
@@ -26,8 +27,9 @@ function App() {
     {/* <Button /> */}
     {/* <Input /> */}
     {/* <Grades /> */}
-    <ContactForm />
-    <Paragraph />
+    {/* <ContactForm /> */}
+
+    <Section />
     </>
    
   )
