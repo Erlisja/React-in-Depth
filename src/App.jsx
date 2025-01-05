@@ -9,14 +9,12 @@ import ContactForm from './components/ContactForm'
 import Paragraph from './components/Paragraph'
 import Section from './components/Section'
 import Button1 from './Button1'
+import Profile from './CardExercise/Profile'
 function App() {
 
-
-
-  const handleClick = () => {
-    console.log('Button clicked')
+  function handleClick(){
+    console.log('Button Works when Clicked!')
   }
-
 
   return (
     <>
@@ -34,10 +32,9 @@ function App() {
     {/* <Input /> */}
     {/* <Grades /> */}
     {/* <ContactForm /> */}
+{/*  <Section /> */}
+    <Profile  profileText={'Example'} headerText={'Props Drilling'} Buttontext={'Click Me!'} handleClick={handleClick} />
 
-    <Section />
-
-    {/* <Button1 children={'Click Me'} function1={handleClick} /> */}
     </>
    
   )

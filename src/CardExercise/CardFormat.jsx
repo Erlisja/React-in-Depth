@@ -1,14 +1,12 @@
 import Header from "./Header";
 import Button from "./Button";
 
-function CardFormat() {
+function CardFormat({headerText, Buttontext, handleClick}) {
   return (
     <>
-      <Header text={"Card Title"} />
-      <Button
-        text={"Click Me"}
-        handleClick={() => console.log("Button clicked")}
-      />
+     <h2>{headerText}</h2>
+      <Button text={Buttontext} handleClick={handleClick} />
+    
     </>
   );
 }
