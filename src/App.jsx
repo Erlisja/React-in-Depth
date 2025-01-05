@@ -8,8 +8,14 @@ import Grades from "./components/Grades"
 import ContactForm from './components/ContactForm'
 import Paragraph from './components/Paragraph'
 import Section from './components/Section'
+import Button1 from './Button1'
 function App() {
 
+
+
+  const handleClick = () => {
+    console.log('Button clicked')
+  }
 
 
   return (
@@ -30,6 +36,8 @@ function App() {
     {/* <ContactForm /> */}
 
     <Section />
+
+    {/* <Button1 children={'Click Me'} function1={handleClick} /> */}
     </>
    
   )
