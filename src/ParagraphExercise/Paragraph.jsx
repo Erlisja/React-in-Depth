@@ -1,14 +1,14 @@
-import Header from './Header'
+import Header from "./Header";
 
-import React from 'react'
+import React from "react";
 
-function Paragraph({text,paragraphTxt}) {
+function Paragraph(props) {
   return (
-    <p>
-        <Header text={text} />
-        
-       {paragraphTxt}</p>
-  )
+    <>
+      {props.children}
+      <p>{props.paragraphTxt}</p>
+    </>
+  );
 }
 
-export default Paragraph
+export default Paragraph;
